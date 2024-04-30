@@ -1,0 +1,159 @@
+body{
+  background-image: url("images/moviebg.png");
+}
+
+/*banner*/
+.banner-container{
+  position: fixed;
+  top: 0;
+  background-image: url("images/rancidbannerbg.png");
+  height: 50px;
+  width: 100%
+}
+
+.banner-container > img{
+  display: block;
+  height: 50px;
+  width: auto;
+  margin: auto auto;
+}
+
+h1{ /*main title*/
+  margin-top: 72px;
+  font-size: 24pt;
+  font-family: Georgia;
+  text-shadow: 3px 3px #999999;
+  text-align: center;
+}
+
+.main-container{
+  width: 800px;
+  margin: auto auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px gray;
+  background-color: #EEEEEE;
+}
+
+.main-container > p{
+  font-size: 10pt;
+  font-family: Georgia;
+}
+
+.main-container > aside{
+  background-color: #A2B964;
+  float: right;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 10pt;
+}
+
+.main-container > aside > div > img{
+  border-top-right-radius: 20px;
+}
+
+.main-container > aside > dl > dt{
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.main-container > aside > dl > dd > ul{
+  margin: 0;
+}
+
+.main-container > nav > div{
+  width: 550px;
+  background-image: url("images/rottenlargebg.png");
+  border-top-left-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-container > nav > div > img{
+  height: 83px;
+  border-top-left-radius: 20px;
+}
+
+.main-container > nav > div{
+  font-size: 48px;
+  font-weight: bold;
+  color: red;
+}
+
+.main-container > nav > div > p{
+  font-weight: normal;
+  font-size: 8pt;
+  color: white;
+  padding-left: 5px;
+  position: relative;
+  top: 20px;
+}
+
+.main-container > section{
+  background-color: #EEEEEE;
+  column-count: 2;
+  column-width: 270px;
+  column-gap: 10px;
+  column-rule: none;
+}
+/*column을 쓰지마세요*/
+
+.main-container > section > p{
+  display: flex;
+  font-size: 10pt;
+  font-family: Georgia;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 2px solid #CCCCCC;
+  border-radius: 20px;
+  margin: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  break-inside: avoid; /*avoid being cutted by column sort*/
+}
+
+.main-container > section > cite{
+  font-size: 10pt;
+  font-family: Georgia;
+  display: flex;
+  align-items: center;
+  break-inside: avoid;
+}
+
+.main-container > section > p > img{
+  padding-right: 5px;
+}
+
+.main-container > section > cite > img{
+  float: left;
+  padding-right: 5px;
+}
+
+.main-container >  footer {
+  font-size: 10pt;
+  font-family: Georgia;
+  background-color:  #A2B964;
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*link part*/
+.misc{
+  display: flex;
+  position: fixed;
+  bottom:0;
+  right:0;
+  flex-direction: column;
+}
+
+.misc > a{
+  display: flex;
+  margin: 0;
+  opacity: 50%;
+}
+
+.misc > a:hover{
+  opacity: 100%;
+}
