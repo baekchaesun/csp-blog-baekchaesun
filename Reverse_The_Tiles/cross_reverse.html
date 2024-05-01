@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Jaesun Baek
+  Date: April 30, 2024
+  Section: IAB 6068 - Internet Programming
+  reverse the tile game
+  Baekchaesun is not the spelling just nickname.
+  category: projects
+-->
+
+<html>
+<head>
+  <title>Reverse the tile</title>
+  <link rel="stylesheet" type="text/css" href="cross_reverse.css" />
+  <script rel="script" type="text/javascript" src="cross_reverse.js"></script>
+</head>
+<body>
+  <div class="banner-container">
+    <h1><a href="../index/index.html">baekchaesun's</a> - Reverse!</h1>
+  </div>
+
+  <div class="categories-container">
+    <ul>
+      <li>Web Design</li> <!--주제별 목록 창 만들 예정-->
+      <li><strong>Projects</strong></li>
+      <li>#</li>
+    </ul>
+  </div>
+  <div class="nothing-in-space"></div>
+
+  <div class="main-structure">
+    <aside class="side-container">
+      <img id="profile-picture" src="../images/profile picture.png" alt="profile-picture">
+      <div id="name-plate">
+        <img id="small-profile-picture" src="../images/shooya.png" alt="small-profile-imoji">
+        <div>
+          <strong>백재선</strong>
+          <p>baekchaesun</p>
+        </div>
+      </div>
+      <p>
+        <span>
+          "various experiences"
+        </span>
+      </p>
+      <p>
+        <a href="../about_me/about.html">Go Profile</a>
+      </p>
+      <div class="nothing-in-space"></div>
+      <div id="searchBox">
+        <form id="searchForm" name="searchForm" method="GET" action="../index/index.html">
+          <p class="hidden">search box</p>
+          <label for="searchPost" class="hidden">search by text</label>
+          <input type="text" id="searchPost" name="searchPost" style="ime-mode:active" placeholder="검색" value="">
+          <button id="searchBtn" type="submit">
+            <img  id="searchIcon" src="../images/searchicon.png" alt="searchicon">
+          </button>
+        </form>
+      </div>
+      <div class="nothing-in-space"></div>
+      <div>
+        <ul>
+          <li><a href="../HW01_Review/hw1review.html">REVIEW: HW01</a></li>
+          <li><a href="../Reverse_The_Tiles/cross_reverse.html">Reverse the tiles</a></li>
+          <li><a href="#">new post</a></li>
+          <li><a href="#">new post</a></li>
+          <li><a href="#">new post</a></li>
+          <li><a href="#">new post</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="prologue">
+      <div>
+        <div class="prologue-part">
+          <div id="intro">
+            <h3>Make the tiles all same color with minimum clicks.</h3>
+            <ol>
+              <li>The tiles around the clicked will be flipped <strong>except for the clicked one.</strong> </li>
+              <li>Pink or Blue any color is OK.</li>
+              <li>Impossible setting does <strong>NOT</strong> exist in this game.</li>
+            </ol>
+          </div>
+          <div id="control">
+            <p>You have clicked <span id="score">0</span> times!</p>
+            <button id="resetBtn">reset</button>
+          </div>
+
+          <div id="board">
+            <div>
+              <div class="tile t11 forward"></div>
+              <div class="tile t21 forward"></div>
+              <div class="tile t31 forward"></div>
+            </div>
+            <div>
+              <div class="tile t12 forward"></div>
+              <div class="tile t22 forward"></div>
+              <div class="tile t32 forward"></div>
+            </div>
+            <div>
+              <div class="tile t13 forward"></div>
+              <div class="tile t23 forward"></div>
+              <div class="tile t33 forward"></div>
+            </div>
+          </div>
+          <div id="best-score-container">
+            <button id="completionBtn">complete!</button>
+            <p>Minimum click : <span id="best-score">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+  </div>
+
+
+</body>
+</html>

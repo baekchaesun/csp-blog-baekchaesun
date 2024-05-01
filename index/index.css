@@ -29,10 +29,13 @@ body {
 
   h1{
     margin: 0;
-    font-size: 40pt;
+    font-size: 30pt;
     padding-left: 20px;
     position: relative;
     top: 30px;
+    a{
+      font-size: 35pt;
+    }
   }
 }
 
@@ -130,10 +133,11 @@ body {
     width: 200pt;
     img{
       width: 200pt;
+      height: 250pt;
     }
     p{
       width:200pt;
-      padding: 0, 3pt;
+      padding: 0 5pt;
     }
     a{
       width:200pt;
